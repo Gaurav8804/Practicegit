@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-15T14:49:09 IST" name="Suite" finished-at="2024-03-15T14:49:34 IST" duration-ms="24833">
+    <groups>
+    </groups>
+    <test started-at="2024-03-15T14:49:09 IST" name="Test" finished-at="2024-03-15T14:49:34 IST" duration-ms="24833">
+      <class name="selenium.Goibibo">
+        <test-method signature="scenarioIbibo()[pri:0, instance:selenium.Goibibo@4550bb58]" started-at="2024-03-15T14:49:09 IST" name="scenarioIbibo" finished-at="2024-03-15T14:49:34 IST" duration-ms="24782" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenarioIbibo -->
+      </class> <!-- selenium.Goibibo -->
+      <class name="selenium.MakeMyTrip">
+        <test-method signature="test()[pri:0, instance:selenium.MakeMyTrip@36bc55de]" started-at="2024-03-15T14:49:09 IST" name="test" finished-at="2024-03-15T14:49:34 IST" duration-ms="24692" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- selenium.MakeMyTrip -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
