@@ -7,14 +7,18 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
 
+ 
 import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class MakeMyTrip {
 	static String date = "Sun Mar 31 2024";
 	static String returnDate = "Tue Apr 02 2024";
 
-	public static void main(String[] args) {
+	@Test 
+	 public void test() {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -41,11 +45,12 @@ public class MakeMyTrip {
 				break;
 			 
 			} catch (Exception e) {
-				WebElement frame = driver.findElement(By.cssSelector(" [id='webklipper-publisher-widget-container-notification-frame']"));
+				WebElement frame = driver.findElement(By.cssSelector("[id='webklipper-publisher-widget-container-notification-frame']"));
 				driver.switchTo().frame(frame);
 				driver.findElement(By.xpath("//div[@class='wrapper-outer']//a[contains(@id,'v') and @class='close' ]/i[contains(@class,'e')]")).click();
 				driver.switchTo().defaultContent();
 			}
 		}
+ driver.quit();
 	}
 }
