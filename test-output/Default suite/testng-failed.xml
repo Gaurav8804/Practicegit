@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="selenium.MakeMyTrip">
+      <class name="testNG.ReverseString">
         <methods>
-          <include name="test"/>
+          <include name="reverseString"/>
         </methods>
-      </class> <!-- selenium.MakeMyTrip -->
+      </class> <!-- testNG.ReverseString -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
